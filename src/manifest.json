@@ -1,0 +1,18 @@
+{
+    "name": "Show Passwords",
+    "version": "1.0.7",
+    "description": "Show characters in a password field when it has focus.",
+    "background_page": "background.html",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": ["*://*/*", "tabs"],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"],
+        "all_frames": true
+    }],
+    "browser_action": {"default_icon": "icon19.png"}
+}
